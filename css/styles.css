@@ -277,8 +277,8 @@ body {
 }
 
 .portfolio__item:hover .portfolio__item-desc {
-    height: 100%;
-    bottom: 0;
+    /*height: 100%;*/
+    transform: translateY(0%);
 }
 
 .portfolio__image {
@@ -298,10 +298,11 @@ body {
 }
 
 .portfolio__item-desc {
-    height: 0;
+    height: 100%;
     padding: 40px 32px;
     position: absolute;
-    bottom: -100%;
+    transform: translateY(100%);
+    top: 0;
     right: 0;
     width: 100%;
     background: var(--primary-brand);
@@ -352,9 +353,8 @@ body {
     background: var(--success);
 }
 
-.footer__content {
+.footer .container {
     display: flex;
-    gap: 120px;
 }
 
 .footer__social-title {
@@ -364,4 +364,8 @@ body {
 
 .footer__social-list {
     gap: 16px;
+}
+
+.footer__info {
+    margin-right: 120px;
 }
