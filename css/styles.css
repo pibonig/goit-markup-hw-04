@@ -261,7 +261,8 @@ body {
 }
 
 .team__social-list {
-    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
 }
 
 .portfolio__list {
