@@ -306,6 +306,7 @@ body {
 }
 
 .team__social-link:hover,
+.team__social-link:focus,
 .team__social-link:active {
     background-color: var(--pressed-state);
 }
