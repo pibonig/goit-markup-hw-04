@@ -297,11 +297,11 @@ body {
 .portfolio__item {
     border: 1px solid var(--accent);
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     width: calc((100% - 48px) / 3);
 }
 
 .portfolio__item:hover .portfolio__item-desc {
-    /*height: 100%;*/
     transform: translateY(0%);
 }
 
@@ -330,8 +330,8 @@ body {
     right: 0;
     width: 100%;
     background: var(--primary-brand);
-    transition: all 0.4s;
     color: var(--light);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -344,8 +344,12 @@ body {
     margin-top: 8px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--light);
+    color: var(--white-background);
     max-width: 264px;
+}
+
+.footer .container {
+    align-items: baseline;
 }
 
 .footer .logo {
@@ -374,6 +378,7 @@ body {
 }
 
 .social-link:hover,
+.social-link:focus,
 .social-link:active {
     background-color: var(--success);
 }
