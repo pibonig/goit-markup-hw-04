@@ -288,6 +288,11 @@ body {
     gap: 24px;
 }
 
+.team__social-link:hover,
+.team__social-link:active {
+    background-color: var(--pressed-state);
+}
+
 .portfolio__list {
     display: flex;
     flex-wrap: wrap;
@@ -390,6 +395,9 @@ body {
 .footer__social-title {
     margin-bottom: 16px;
     font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--white-background);
 }
 
 .footer__social-list {
